@@ -48,5 +48,5 @@ Captura del depurador: capturas/reto3.png
 
 ## Reto 5 · ¿Qué lenguaje elegirías?
 
-- Caso A (web de la tienda):
-- Caso B (propuesta en ensamblador):
+- Caso A (web de la tienda): elegiría un lenguaje **interpretado**, como JavaScript, que ejecuta directamente el navegador. Portabilidad: funciona en cualquier navegador y sistema sin que el cliente tenga que instalar nada. Tipo de proyecto: es una aplicación web, y JavaScript es el lenguaje estándar del navegador. Coste de desarrollo: es bajo, y el rendimiento no es crítico para un cálculo tan sencillo.
+- Caso B (propuesta en ensamblador): **no** usaría ensamblador; seguiría con Java, que es un lenguaje **mixto** (se compila a bytecode y lo ejecuta la JVM). Portabilidad: el ensamblador depende de la arquitectura del procesador, así que no funcionaría «en cualquier ordenador»; Java sí, gracias a la JVM. Coste de desarrollo: escribir y mantener ensamblador es mucho más lento y propenso a errores. Rendimiento: la calculadora hace cuatro operaciones y luego espera al usuario, así que la mejora de velocidad no se notaría; el ensamblador solo compensa en sistemas de tiempo real o con hardware muy limitado.
