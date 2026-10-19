@@ -41,7 +41,10 @@ Captura del depurador: capturas/reto3.png
 ## Reto 4 · Reutilización
 
 - Métodos creados y para qué sirve cada uno:
-- ¿Qué ventaja tiene frente al código anterior?
+  - `calcularDescuento(double base, boolean socio)`: recibe la base y si el cliente es socio, y devuelve el descuento total (10 % si la base supera 100 € más 5 % si es socio).
+  - `aplicarIVA(double importe)`: recibe un importe y lo devuelve con el 21 % de IVA sumado.
+  - `pedirDecimal(Scanner sc, String mensaje)` (opcional): muestra un mensaje y lee un número decimal, para no repetir `print` + `nextDouble`.
+- ¿Qué ventaja tiene frente al código anterior? El `main` queda más corto y fácil de leer. Cada método hace una sola cosa, así que se puede reutilizar en otras partes del programa sin copiar código, y si cambia una regla (por ejemplo el IVA o el descuento) solo hay que cambiarla en un sitio. También es más fácil probar y depurar cada cálculo por separado. Con 60, 2 y s sigue dando 123,42 €.
 
 ## Reto 5 · ¿Qué lenguaje elegirías?
 
