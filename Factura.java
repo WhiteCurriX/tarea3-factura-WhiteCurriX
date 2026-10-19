@@ -14,7 +14,7 @@ public class Factura {
         String producto = sc.nextLine();
 
         System.out.print("Precio unitario: ");
-        double precio# = sc.nextDouble();
+        double precio = sc.nextDouble();
 
         System.out.print("Cantidad: ");
         int cantidad = sc.nextInt()
