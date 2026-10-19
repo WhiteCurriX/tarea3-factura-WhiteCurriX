@@ -29,12 +29,12 @@ base = 60 × 2 = 120 → descuento = 12 (10 %) + 6 (5 % socio) = 18 → (120 −
 
 | Variable | Valor esperado | Valor real |
 |----------|----------------|------------|
-| descuento | | |
-| total | | |
+| descuento | 18,00 | 6,00 |
+| total | 123,42 | 137,94 |
 
-- Línea del error y explicación:
-- Corrección:
-- Mi propia prueba (producto, precio, cantidad, socio → total):
+- Línea del error y explicación: línea 32, `descuento = base * 0.05;`. Con el depurador (punto de ruptura en la línea 28 y avanzando con F10) se ve que después del primer `if` descuento vale 12,0, pero al ejecutar la línea 32 pasa a 6,0: el `=` **sustituye** el descuento del 10 % en lugar de sumarle el 5 % del socio.
+- Corrección: `descuento += base * 0.05;`. Ahora con 60 × 2 y socio el descuento es 18,00 y el total 123,42 €.
+- Mi propia prueba: Raton, precio 40, cantidad 2, socio s → base 80,00, descuento 4,00 (solo el 5 % de socio porque no supera 100 €), **total 91,96 €**.
 
 Captura del depurador: capturas/reto3.png
 
