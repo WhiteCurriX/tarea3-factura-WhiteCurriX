@@ -17,7 +17,7 @@ public class Factura {
         double precio = sc.nextDouble();
 
         System.out.print("Cantidad: ");
-        int cantidad = sc.nextInt()
+        int cantidad = sc.nextInt();
 
         System.out.print("Es cliente socio (s/n): ");
         String socio = sc.next();
