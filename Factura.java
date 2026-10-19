@@ -1,3 +1,4 @@
+// Palabra del día: nohay
 import java.util.Scanner;
 
 public class Factura {
